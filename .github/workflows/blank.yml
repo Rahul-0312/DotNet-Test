@@ -27,9 +27,9 @@ jobs:
       - name: Install Terragrunt
         shell: bash
         run: |- 
-              wget https://github.com/gruntwork-io/terragrunt/releases/download/v0.36.7/terragrunt_linux_arm64
-              echo pwd
-              terragrunt 
+#               wget https://github.com/gruntwork-io/terragrunt/releases/download/v0.36.7/terragrunt_linux_arm64
+              pwd
+#               terragrunt 
               
 #       - name: Setup Terragrunt
 #         shell: bash
