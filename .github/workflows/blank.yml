@@ -30,7 +30,6 @@ jobs:
               wget https://github.com/gruntwork-io/terragrunt/releases/download/v0.36.7/terragrunt_linux_arm64
               mv terragrunt_linux_arm64 terragrunt
               chmod u+x terragrunt
-              cd terragrunt/terragrunt 
               ls 
               pwd
 #               terragrunt
