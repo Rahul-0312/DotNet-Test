@@ -28,14 +28,15 @@ jobs:
         shell: bash
         run: |- 
               wget https://github.com/gruntwork-io/terragrunt/releases/download/v0.36.7/terragrunt_linux_arm64
-              pwd
+              echo pwd
+              terragrunt 
               
-      - name: Setup Terragrunt
-        shell: bash
-        run: |-
-              mv terragrunt_linux_arm64 terragrunt
-              chmod u+x terragrunt
-              mv terragrunt /usr/local/bin/terragrunt
+#       - name: Setup Terragrunt
+#         shell: bash
+#         run: |-
+#               mv terragrunt_linux_arm64 terragrunt
+#               chmod u+x terragrunt
+#               mv terragrunt /usr/local/bin/terragrunt
               
 #       - name: Check Terragrunt Version
 #         run: terragrunt
