@@ -28,18 +28,12 @@ jobs:
         shell: bash
         run: |- 
                 brew install terragrunt
-                terragrunt
-#               wget https://github.com/gruntwork-io/terragrunt/releases/download/v0.36.7/terragrunt_linux_arm64
-#               mv terragrunt_linux_arm64 terragrunt
-#               chmod u+x terragrunt
-#               ls 
-#               pwd
-
               
-#       - name: Setup Terragrunt
-#         shell: bash
-#         run: |-
-#               
+      - name: Terragrunt init
+        run: terragrunt init
+      
+      - name: Terragrunt Plan
+        run: terragrunt plan
               
 #       - name: Check Terragrunt Version
 #         run: terragrunt
