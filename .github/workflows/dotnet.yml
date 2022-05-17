@@ -17,9 +17,15 @@ jobs:
       uses: actions/setup-dotnet@v2
       with:
         dotnet-version: 5.0.x
-#     - name: Restore dependencies
-#       run: dotnet restore
-#     - name: Build
-#       run: dotnet build --no-restore
+    - name: Run DotNet New 
+      run: dotnet new web
+    - name: Restore dependencies
+      run: dotnet restore
+    -name: Add & Commit dotnet files
+      uses: EndBug/add-and-commit@v9
+      with:
+        default_author: github_actions
+    # - name: Build
+    #   run: dotnet build --no-restore
 #     - name: Test
 #       run: dotnet test --no-build --verbosity normal
